@@ -15,19 +15,13 @@ node {
 
 
 
+
+stage('apply changes to the enviroment'){
+       sh "ls -l"
+	   sh "php -s localhost:5000"
+} 
+
 }
-} catch(Error|Exception e) {
-  //Finish failing the build after telling someone about it
-  throw e
-} finally {
-        // Post build steps here
-        /* Success or failure, always run post build steps */
-        // send email
-        // publish test results etc etc
-    }
-
-
-
  /*****************************************
  * To use this function you need to install
  * the Slack Notification Plugin
