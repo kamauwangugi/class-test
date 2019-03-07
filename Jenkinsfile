@@ -16,7 +16,7 @@ docker image build --tag docker push dknsaf/dockerimagebuild1:tagname
 
 stage('Push')
 	{
-                        docker login --username dknsaf --email=dknsaf@gmai.com
+                        docker login --username dknsaf --email=dknsaf@gmail.com
                         docker push /dockerimagebuild1
                 }
 
